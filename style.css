@@ -1,0 +1,89 @@
+body {
+  background-color: #e0efff;
+  color: black;
+}
+
+.header {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.form-label{
+  font-weight: 500;
+  color: black;
+}
+.form-control,
+.btn {
+  margin-bottom: 15px;
+}
+
+.location-btn {
+  background-color: gray;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid gray;
+}
+
+.or-divider::before {
+  margin-right: 0.5em;
+}
+
+.or-divider::after {
+  margin-left: 0.5em;
+}
+
+#currentWeather {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+.forecast-title {
+  color: black;
+  font-weight: bold;
+  display: none;
+  margin: 20px 0 10px 0;
+}
+
+.forecast {
+  display: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.forecast-card {
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+ 
+.bi-sun-fill {
+  color: orange;
+   font-size: 35px;
+}
+
+.bi-cloud-fill,
+.bi-cloud,
+.bi-cloud-sun-fill {
+  color: lightblue;
+  font-size: 35px;
+}
